@@ -5,7 +5,7 @@ A simple ecommerce web applucation built using **Node.js, express.js,MongoDb, an
 ---
 ## Setup Instructions
 
-### ** Prerequisites
+### **Prerequisites**
 
 Ensure you have following installed:
 
