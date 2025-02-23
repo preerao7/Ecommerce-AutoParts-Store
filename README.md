@@ -14,27 +14,27 @@ Ensure you have following installed:
 - **Homebrew** 
 
 ### Installation & Setup
-
+```bash
 node --version
 npm install -g express-generator
 express --version
-- cd (project folder)
-- express Vidzy
+cd (project folder)
+express Vidzy
 
 
-- npm install 
-- npm install nodemon -g
-- npm install monk --save 
-- npm install ejs --save
-- npm install method-override --save 
+npm install 
+npm install nodemon -g
+npm install monk --save 
+npm install ejs --save
+npm install method-override --save 
 
 // to start the server
-- npx nodemon ./bin/www 
+npx nodemon ./bin/www 
 
 //parallely mongodb needs to started before running the server
-- brew services start mongodb-community@6.0   // to start mongodb as a service       
+ brew services start mongodb-community@6.0   // to start mongodb as a service       
 
-
+```
 #### Steps for displaying movies on start/welcome page
 
 
