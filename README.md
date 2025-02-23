@@ -1,3 +1,21 @@
+# Ecommerce Auto Parts Web Application
+
+A simple ecommerce web applucation built using **Node.js, express.js,MongoDb, and EJS**
+
+---
+## Setup Instructions
+
+### ** Prerequisites
+
+Ensure you have following installed:
+
+- **Node.js & npm**
+- **Mongodb**
+- **Homebrew** 
+
+### Installation & Setup
+
+
 node --version
 npm install -g express-generator
 express --version
@@ -7,22 +25,19 @@ express Vidzy
 
 npm install 
 npm install nodemon -g
-
 npm install monk --save 
-sudo npm install ejs --save
+npm install ejs --save
 npm install method-override --save 
 
+// to start the server
+npx nodemon ./bin/www 
 
-nodemon  
-npx nodemon ./bin/www // to start the server
-
-//parallely mongodb needs to started before starting server
+//parallely mongodb needs to started before running the server
 brew services start mongodb-community@6.0   // to start mongodb as a service       
 
 
+#### Steps for displaying movies on start/welcome page
 
-
-Steps for displaying movies on start/welcome page
 
 1. index.js: retrieve all documents from mongodb, pass them to ejs file
 2. index.ejs: display all videos
@@ -36,7 +51,7 @@ Steps for displaying movies on start/welcome page
 10. Add jumbotron
 
 
-Next steps
+#### Next steps
 - Video insert (/videos/new)
 - Show video details (/videos/:id)
 - Delete a video
