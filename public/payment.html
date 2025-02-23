@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PAYMENT SUCCESSFULL</title>
+<style type="text/css">
+		.PAY {
+			text-align: center;
+			color: blue;
+		}
+		body {
+			background-color: yellow;
+		}
+		#seconds{
+			text-align: center;
+			color: red;
+		}
+</style>
+
+</head>
+
+<script>
+	var sec=5;
+	function displya()
+	{
+		sec -=1;
+		document.getElementById("seconds").innerText="This page will be redirected to Home Page in " +sec+ " seconds";
+	}
+	setInterval(displya,1000);
+
+	function dojob()
+	{
+		window.location="http://localhost:3000/start.html";
+	}
+
+	setTimeout('dojob()',5000);
+	
+</script>
+<body>
+	<div class="PAY">
+	<h1>PAYMENT SUCCESSFULL</h1>
+	<h2>THANK YOU FOR SHOPPING WITH US</h2>
+	</div>
+	<div id="seconds"></div>
+
+
+</body>
+</html>

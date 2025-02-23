@@ -1,0 +1,8 @@
+html
+  head
+  body
+    .container
+      form(action='/api/videos/#{video._id}/update/redelete' method='POST')
+        h1 Redo successfully
+        .form-group
+          button.btn.btn-info(type='submit') Done

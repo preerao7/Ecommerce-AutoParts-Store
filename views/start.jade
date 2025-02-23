@@ -1,0 +1,148 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1 ')
+    title Auto Parts
+    link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO' crossorigin='anonymous')
+    link(rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.10.0/css/all.css' integrity='sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p' crossorigin='anonymous')
+    link(rel='stylesheet' type='text/css' href='/stylesheets/startstyle.css')
+  body
+    // NAVIGATION
+    nav.navbar.navbar-expand-lg.navbar-light.bg-white.py-3.fixed-top
+      .container
+        img(src='/images/logo1.png')
+        button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+          span
+            i#bar.fas.fa-bars
+        #navbarSupportedContent.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item
+              a.nav-link.active(href='#') Home
+            li.nav-item
+              a.nav-link(href='shop.html') Shop
+            li.nav-item
+              a.nav-link(href='#') Blog
+            li.nav-item
+              a.nav-link(href='#') About
+            li.nav-item
+              a.nav-link(href='#') Contact Us
+            li.nav-item
+              a.nav-link(href='#') #{user.username}
+            li.nav-item
+              i.fal.fa-shopping-bag
+    section#home
+      .container
+        h5
+        h1
+          span Best Price
+        p
+          | Get your desired auto part in the lower price
+          br
+          | Limited offer for this winter
+        a(href='shop.html')
+          button.buttonshop Shop Now
+    section#brand.container
+      .row.m-0.py-5
+        img.img-fluid.col-lg-2.col-md-4.col-6(src='/images/brand/1.jpg')
+        img.img-fluid.col-lg-2.col-md-4.col-6(src='/images/brand/2.jpg')
+        img.img-fluid.col-lg-2.col-md-4.col-6(src='/images/brand/3.png')
+        img.img-fluid.col-lg-2.col-md-4.col-6(src='/images/brand/4.jpg')
+        img.img-fluid.col-lg-2.col-md-4.col-6(src='/images/brand/5.jpg')
+        img.img-fluid.col-lg-2.col-md-4.col-6(src='/images/brand/6.jpg')
+    section#featured.my-5.pd-5
+      .container.text-center.mt-5.py-5
+        h3 Featured Products
+        hr.mx-auto
+      .row.mx-auto.container-fluid
+        .product.text-center.col-lg-3.col-md-4.col-12.devices
+          img.img-fluid.mb-3(src='/images/shop/4.jpg')
+          .star
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star
+          h5.p-name Antenna
+          h4.p-price $10.25
+          button.buy-btn Buy Now
+        .product.text-center.col-lg-3.col-md-4.col-12.devices
+          img.img-fluid.mb-3(src='/images/shop/2.jpg')
+          .star
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star
+          h5.p-name Audio Cassettee Player
+          h4.p-price $9.75
+          button.buy-btn Buy Now
+        .product.text-center.col-lg-3.col-md-4.col-12.devices
+          img.img-fluid.mb-3(src='/images/shop/3.jpg')
+          .star
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star
+          h5.p-name Sub Woofer
+          h4.p-price $18.75
+          button.buy-btn Buy Now
+        .product.text-center.col-lg-3.col-md-4.col-12.meters
+          img.img-fluid.mb-3(src='/images/shop/10.jpg')
+          .star
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star
+          h5.p-name Speedometer
+          h4.p-price $9.75
+          button.buy-btn Buy Now
+    footer.mt-5.py-5
+      .row.container.mx-auto.pt-5
+        .footer-one.col-lg-3.col-md-6.col-12
+          .logo
+            h3 AutoComm
+          p.pt-3
+            | This is an auto parts e-commerce company that has all types of auto parts that are need for a car
+        .footer-one.col-lg-3.col-md-6.col-12.mb-3
+          h5.pb-2 Featured
+          ul.text-uppercase.list-unstyled
+            li
+              a(href='#') Batteries
+            li
+              a(href='#') Meters
+            li
+              a(href='#') Gauges
+            li
+              a(href='#') Ignition Parts
+            li
+              a(href='#') Devices
+        .footer-one.col-lg-3.col-md-6.col-12.mb-3
+          h5.pb-2 Contact Us
+          div
+            h6 ADDRESS
+            p 132 STREET NAME, US
+          div
+            h6 PHONE
+            p (123) 456-7899
+          div
+            h6 EMAIL
+            p MAIL@GMAIL.COM
+        .col-lg-3.col-md-6.col-12.mb-4
+          img(src='/images/payment.png')
+      .copyright.mt-5
+        .row.container.mx-auto
+          .col-lg-3.col-md-6.col-12
+            a(href='#')
+              i.fab.fa-facebook-f
+            a(href='#')
+              i.fab.fa-twitter
+            a(href='#')
+              i.fab.fa-linkedin-in
+          .col-lg-3.col-md-6.col-12.text-nowrap.mb-2
+            p ©copyrights owned by autoparts 
+    script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js' integrity='sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB' crossorigin='anonymous')
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js' integrity='sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13' crossorigin='anonymous')
+    script(type='text/javascript' src='/javascripts/start.js')

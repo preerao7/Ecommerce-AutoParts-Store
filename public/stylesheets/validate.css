@@ -1,0 +1,26 @@
+.error {
+	background: #fcc;
+	border: 2px solid #c99;
+}
+/*.container {
+
+	text-align: center;
+}
+
+#myForm {
+	text-align: center;
+	
+	padding-left: 30%;
+}*/
+body {
+  display:flex; 
+  flex-direction:column; 
+  justify-content:center;
+  min-height:90vh;
+  margin-left: 35%;
+  background-image: url("/images/tools_photo.jpg");
+
+}
+h1{
+	color: white;
+}

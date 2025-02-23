@@ -1,0 +1,31 @@
+<%- include ('partials/header') %>
+<div class="container">
+<h1> Edit the movie </h1>
+
+
+<form action="/videos/<%= video._id %>/update" method="POST">
+
+<div class="form-group">
+    <label>Title: </label><input type="text" name="title" class="form-control" placeholder="title" value="<%=video.title%>">
+</div>
+ <div class="form-group">
+	<label>Genre: </label><input type="text" name="genre" class="form-control" placeholder="genre" value="<%=video.genre%>">
+</div>
+<div class="form-group">
+	<label>Image Name: </label><input type="text" name="image" class="form-control" placeholder="image name" value="<%=video.image%>">
+</div>
+ <div class="form-group">
+	<label>Description: </label><textarea name="desc" class="form-control" placeholder="description"><%=video.description%></textarea>
+</div>
+<div class="form-group">
+	<button type="submit" class="btn btn-info" >Update</button>
+</div>
+
+
+</form>
+
+<a href="/">Cancel</a>
+
+</div>
+
+<%- include ('partials/footer') %>

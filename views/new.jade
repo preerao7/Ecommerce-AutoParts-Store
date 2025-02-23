@@ -1,0 +1,15 @@
+html
+  head
+  body
+    .container
+      h1  New movie 
+      form(action='/' method='POST')
+        .form-group
+          input.form-control(type='text' name='title' placeholder='title')
+        .form-group
+          input.form-control(type='text' name='price' placeholder='price')
+        .form-group
+          input.form-control(type='text' name='image' placeholder='image name')
+        .form-group
+          button.btn.btn-info(type='submit') Save
+      a(href='/') Cancel

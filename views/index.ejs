@@ -1,0 +1,19 @@
+<%- include ('partials/header') %>
+
+<% if (user) { %>
+
+<div class="caption">You are currently logged in as <%= user.username %></div>
+<a href="/logout">Logout</a>
+
+<% } else { %>
+
+<div class="caption">Welcome Guest! </div>
+
+<a href="/login">Login
+<br />
+<a href="/register">Register</a></a>
+
+
+<%} %>
+<%- include ('partials/footer') %>
+

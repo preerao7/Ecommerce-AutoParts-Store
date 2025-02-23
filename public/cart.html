@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1 ">
+	<title>Cart</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+	<link rel="stylesheet" type="text/css" href="/stylesheets/startstyle1.css">
+</head>
+<body>
+
+	<!--NAVIGATION-->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+  <div class="container">
+    <img src="/images/logo1.png">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span ><i id="bar" class="fas fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">\
+      <ul class="navbar-nav ml-auto">
+       
+          <li class="nav-item">
+          <a class="nav-link" href="start.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="shop.html">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Cart History</a>
+        </li>
+        <li class="nav-item">
+          <a  class="active" href="cart.html">
+          <i class="fal fa-shopping-bag"></i></a>
+        </li>
+        
+        
+    </div>
+  </div>
+</nav>
+
+<section id="cart_home" class="pt-5 mt-5 container">
+	<h2 class="font-weight-bold pt-5">Shopping cart</h2>
+</section>
+
+<section id="cart_container" class="container my-5">
+
+	<table width="100%">
+
+		<thead>
+			<tr>
+				<td>Remove</td>
+				<td>Image</td>
+				<td>Product</td>
+				<td>Cost</td>
+				<td>Quantity</td>
+				
+			</tr>
+		</thead>
+
+		<tbody id="tabledata">
+
+		</tbody>
+	</table>
+	
+</section>
+
+<section id="cart_bottom" class="container">
+	<div class="row">
+		<div class="promo_code col-lg-6 col-md-6 col-12 mb-4">
+			<div>
+				<h5>Promo Code</h5>
+				<p>Add promo code if applicable</p>
+				<input type="text" placeholder="Promo code">
+				<button>Apply</button>
+			</div>
+		</div>
+		<div class="total col-lg-6 col-md-6 col-12 ">
+			<div>
+				<h5>Cart Total</h5>
+				
+				<div class="d-flex justify-content-between">
+					<h6>Total</h6>
+					<p id="toto">$ </p>
+				</div>
+				<a href="payment.html"><button class="ml-auto">checkout</button></a>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+<footer class="mt-5 py-5">
+	<div class="row container mx-auto pt-5">
+		<div class="footer-one col-lg-3 col-md-6 col-12">
+			<div class="logo"><h3>AutoComm</h3></div>
+			<p class="pt-3">This is an auto parts e-commerce company that has all types of auto parts that are need for a car</p>
+			
+		</div>
+		<div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+		<h5 class="pb-2">Featured</h5>
+		<ul class="text-uppercase list-unstyled">
+			<li><a href="#">Batteries</a></li>
+			<li><a href="#">Meters</a></li>
+			<li><a href="#">Gauges</a></li>
+			<li><a href="#">Ignition Parts</a></li>
+			<li><a href="#">Devices</a></li>
+			
+		</ul>
+	</div>
+	<div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+		<h5 class="pb-2">Contact Us</h5>
+		<div>
+			<h6>ADDRESS</h6>
+			<p>132 STREET NAME, US</p>
+		</div>
+		<div>
+			<h6>PHONE</h6>
+			<p>(123) 456-7899</p>
+		</div>
+		<div>
+			<h6>EMAIL</h6>
+			<p>MAIL@GMAIL.COM</p>
+		</div>
+	</div>
+<div class="col-lg-3 col-md-6 col-12 mb-4">
+			<img src="img/payment.png">
+		</div>
+		
+	</div>
+</div>
+<div class="copyright mt-5">
+	<div class="row container mx-auto">
+		<div class="col-lg-3 col-md-6 col-12">
+			<a href="#"><i class="fab fa-facebook-f"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="#"><i class="fab fa-linkedin-in"></i></a>
+		</div>
+		<div class="col-lg-3 col-md-6 col-12 text-nowrap mb-2">
+			<p>©copyrights owned by autoparts </p>
+		</div>
+		
+	</div>
+</div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="/javascripts/cart.js" type="text/javascript"></script>
+
+</body>
+</html>
