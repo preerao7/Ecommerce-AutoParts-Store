@@ -15,10 +15,9 @@ Ensure you have following installed:
 
 ### Installation & Setup
 
-
-- node --version
-- npm install -g express-generator
-- express --version
+node --version
+npm install -g express-generator
+express --version
 - cd (project folder)
 - express Vidzy
 
